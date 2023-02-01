@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <title>Portifólio</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Container -->
+        <div class="container">
+            <!-- Menu -->
+            <nav>
+                <a href="">
+                    <img src="/assets/img/logo.jpg" alt="Logo do site">
+                </a>
+                <ul class="menu">
+                    <a href="index.html">Inicio</a>
+                    <a href="/pages/projetos.html">Projetos</a>
+                    <a href="/pages/about.html">Sobre Mim</a>
+                    <a href="/pages/jobs.html">Fleelancer</a>
+                    <a href="/pages/contato.html">Contato</a>
+                    <div class="menu-icon-close" onclick="closeMenu()">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                    </div>
+                </ul>
+                <div class="menu-icon" onclick="openMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <!-- Fim do Menu -->
+        </div>
+        <!-- Fim do Container -->
+    </header>
+    <!-- fim do Header -->
+
+    <!-- Main -->
+    <main>
+        <!-- primeira Section -->
+        <section class="section-1">
+            <!-- Container -->
+            <div class="container">
+                <div class="section-1-text">
+                    <h3>
+                        Olá, eu sou o Kauê Siqueira
+                    </h3>
+                    <p>
+                        Seja bem vindo ao meu Portifólio!
+                    </p>
+                    <div class="button">
+                        <a href="../paginas/projetos.html" class="btn animate-btn">
+                            Projetos
+                        </a>
+                        <a href="../paginas/contact.html" class="btn animate-btn">
+                            Entrar em Contato
+                        </a>
+                    </div>
+                </div>
+                <div class="section-1-img">
+                    <img src="/assets/img/foto.jpg" alt="Foto da Section - 1">
+                </div>
+            </div>
+            <!-- Fim do Container -->
+        </section>
+        <!-- Fim da Primeira Section -->
+
+        <!-- Segunda Section - Projetos -->
+        <section class="section-projetos">
+            <div class="container">
+                <h3>Projetos</h3>
+                <p>Ultimos projetos desenvolvidos, ou em construção</p>
+
+                <div class="cards">
+                    <!-- Card 1 -->
+                    <div class="card-item">
+                        <a href="#">
+                            <img src="/assets/img/foto.jpg" alt="Projeto X">
+                            <h3>Projeto X</h3>
+                        </a>
+                    </div>
+                    <!-- Fim do Card 1 -->
+
+                    <!-- Card 2 -->
+                    <div class="card-item">
+                        <a href="#">
+                            <img src="/assets/img/foto.jpg" alt="Projeto X">
+                            <h3>Projeto Y</h3>
+                        </a>
+                    </div>
+                    <!-- Fim do Card 2 -->
+
+                    <!-- Card 3 -->
+                    <div class="card-item">
+                        <a href="#">
+                            <img src="/assets/img/foto.jpg" alt="Projeto X">
+                            <h3>Projeto Z</h3>
+                        </a>
+                    </div>
+                    <!-- Fim do Card 3 -->
+
+                    <!-- Card 4 -->
+                    <div class="card-item">
+                        <a href="#">
+                            <img src="/assets/img/foto.jpg" alt="Projeto X">
+                            <h3>Projeto 4</h3>
+                        </a>
+                    </div>
+                    <!-- Fim do Card 4 -->
+
+                    <!-- Card 5 -->
+                    <div class="card-item">
+                        <a href="#">
+                            <img src="/assets/img/foto.jpg" alt="Projeto X">
+                            <h3>Projeto 5</h3>
+                        </a>
+                    </div>
+                    <!-- Fim do Card 5 -->
+
+                    <!-- Card 6 -->
+                    <div class="card-item">
+                        <a href="#">
+                            <img src="/assets/img/foto.jpg" alt="Projeto X">
+                            <h3>Projeto 6</h3>
+                        </a>
+                    </div>
+                    <!-- Fim do Card 6 -->
+
+                </div>
+            </div>
+        </section>
+        <!-- FIm da Segunda Section - Projetos -->
+
+        <!-- Terceira Section -->
+        <!-- Fim da Terceira Section -->
+    </main>
+    <!-- Fim do Main -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="links">
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+            <p>Desenvolvido por <strong> KAUE SIQUEIRA</strong></p>
+        </div>
+    </footer>
+    <!-- Fim do Footer -->
+
+    <!-- js -->
+    <script src="./assets/js/responsive-menu.js"></script>
+</body>
+
+</html>

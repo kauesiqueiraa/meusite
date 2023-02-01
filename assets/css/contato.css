@@ -1,0 +1,11 @@
+@import url(../css/global.css);
+@import url(../css/menu-responsive.css);
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+.footer {
+    padding: 54px 0;
+}
