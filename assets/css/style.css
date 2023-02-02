@@ -1,18 +1,27 @@
 @import url(../css/global.css);
 @import url(../css/menu-responsive.css);
 
+html {
+    scroll-behavior: smooth;
+}
 .container {
-    max-width: 1400px;
+    max-width: 1900px;
     margin: 0 auto;
     padding: 0 5%;
 }
 
 .section-1,
-.footer {
+.section-projetos,
+.about,
+.contact {
     padding: 54px 0;
 }
 
-h3 {
+.footer {
+    padding: 14px 0;
+}
+
+h3, h1 {
     font-size: 50px;
 }
 
@@ -31,35 +40,53 @@ p {
     color: var(--white-color);
 }
 
-
 .btn:hover {
     background: var(--white-color);
     color: var(--orange-color);
 }
 
-
 /* Section - 1 */
+
+.section-1 {
+    background-color: var(--black-color);
+}
 .section-1 .container{
     display: flex;
     align-items: center;
+    
+    background-size: cover;
+    height: 100vh;
 }
 
 .section-1 .container .section-1-text {
     width: 50%;
     padding: 0 40px;
+    display: flex;
+    flex-direction: column;
 }
 
-.section-1 .container .section-1-text h3 {
+.section-1 .container .section-1-text h3{
+    color: var(--white-color);
+    font-size: 36px;
+}
+
+.section-1 .container .section-1-text h1 {
     font-size: 56px;
+    
+    text-align: center;
+}
+
+.section-1 .container .section-1-text span {
+    color: var(--orange-color);
 }
 
 .section-1 .container .section-1-text p {
     margin: 5px 0 10px 0;
+    color: var(--white-color);
 }
 
 .section-1 .container .section-1-img {
     width: 50%;
-    
 }
 
 .section-1 .container .section-1-img img {
@@ -76,12 +103,65 @@ p {
 }
 
 .section-1 .container .section-1-text .button {
-    margin: 10px;
+    margin-top: 20px;
+}
+
+/* Section About  */
+.about .title::after {
+    content: "Quem sou eu";
+}
+
+.about .title {
+    text-align: center;
+}
+
+.about .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    margin-top: -80px;
+}
+
+.about .img {
+    width: 50%;
+}
+
+.about .img img {
+    width: 100%;
+    height: 80vh;
+}
+
+.about .container .text {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    padding: 0 40px;
+
+    align-items: center;
+}
+
+.about .container .text h3 {
+    text-align: center;
+    font-size: 46px;
+    margin-bottom: 15px;
+}
+
+.about .container .text span {
+    color: var(--orange-color);
 }
 
 /* Projetos */
+.section-projetos .title::after {
+    /* content: "Ultimos projetos desenvolvidos, ou que estão em Desenvolvimento no momento!"; */
+    content: "Desenvolvidos";
+    background-color: var(--orange-color);
+    color: var(--white-color);
+}
 .section-projetos {
-    background-color: rgb(202, 198, 198);
+    /* background-color: rgb(202, 198, 198); */
+    background-color: var(--orange-color);
 }
 
 .section-projetos .container h3{
@@ -107,6 +187,7 @@ p {
     box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
     background-color: var(--white-color);
     width: 360px;
+    height: 360px;
     
     margin: 20px;
 
@@ -135,8 +216,165 @@ p {
   left: 30px;
 }
 
+/* Contato */
+.contact .title::after {
+    content: "Fale Comigo";
+}
+.contact .container .column{
+    width: cal(50% - 30px);   
+}
+
+.contact .rows{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact .container {
+
+    align-items: flex-start;
+}
+
+.contact .container .title {
+    display: flex;
+    justify-content: center;
+}
+.contact .container .rows {
+    display: flex;
+    margin-top: 20px;
+}
+.contact .container .column .text {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.contact .container .left {
+    width: 45%;
+}
+
+.contact .container .left p {
+    text-align: justify;
+}
+
+.contact .container .left .icons {
+    margin: 10px 0;
+}
+
+.contact .container .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .container .row .info {
+    margin-left: 30px;
+}
+
+.contact .container .row .info .head {
+    font-weight: 500;
+}
+
+.contact .container .icon {
+    color: var(--orange-color);
+    font-size: 26px;
+}
+
+.contact .container .icon:not(.name) {
+    cursor: pointer;
+}
+
+.contact .container .right {
+    width: 55%;
+}
+
+.contact .container .right .fields {
+    display: flex;
+}
+
+.contact .container .right form .field,
+.contact .container .right form .fields .field {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+}
+
+.contact .container .right form .field input,
+.contact .container .right form .textarea textarea {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+}
+
+.contact .container .right form .name {
+    margin-right: 10px;
+}
+
+.contact .container .right form .email {
+    margin-left: 10px;
+}
+
+.contact .container .right form .textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.contact .container .right form .textarea textarea {
+    padding-top: 10px;
+    resize: none;
+}
+
+button {
+    border: 1px solid var(--orange-color);
+}
+
+@media ( max-width:1400px) {
+    .container {
+        max-width: 1200px;
+    }
+    .contact .container {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
 @media (max-width: 830px) {
     .section-1 .container{
         flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .section-1 .container .section-1-text {
+        width: 100%;
+    }
+
+    .section-1 .container .section-1-img {
+        width: 100%;
+    }
+
+    .about .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about .container .text,
+    .about .container .img,
+    .about .container .img img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact .container .column {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .contact .container {
+        width: 100%;
+
+        padding: 54px 30px;
     }
 }

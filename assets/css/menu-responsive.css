@@ -2,18 +2,26 @@
 
 /* Menu */
 header {
+    position: fixed;
+    width: 100%;
     background-color: var(--black-color);
+    z-index: 999; 
+    transition: all 0.5s ease;
+    padding: 10px 0;
 }
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;   
+}
 
-    padding-top: 20px;
+header.sticky {
+    background: var(--orange-color);
+    padding: 5px 0;
 }
 
 nav a img {
-    width: 80px;
+    width: 60px;
 }
 
 nav ul {
@@ -50,6 +58,36 @@ nav ul a:not(.btn):after {
 nav ul a:hover::after {
     width: 100%;
 }
+/* Scroll */
+.scroll-up-btn {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+
+    width: 41px;
+    height: 45px;
+
+    text-align: center;
+    line-height: 50px;
+
+    border-radius: 15px;
+    border: 1px solid var(--orange-color);
+    background-color: var(--orange-color);
+    color:   var(--white-color);
+    opacity: 0;
+
+    font-size: 30px;
+    cursor: pointer;
+    pointer-events: none;
+
+    transition: 03s ease-in-out;
+}
+
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
 
 /* Mobile - Responsive */
 .menu-icon {
@@ -57,6 +95,10 @@ nav ul a:hover::after {
     font-size: 25px;
     color: var(--orange-color);
     display: none;
+}
+
+.menu-icon.sticky {
+    color: var(--black-color);
 }
 
 nav .menu-icon-close {
@@ -97,7 +139,7 @@ nav .menu-icon-close {
     nav .menu-icon-close {
         display: block;
         position: absolute;
-        top: 46px;
-        right: 48px;
+        top: 22px;
+        right: 30px;
     }
 }
